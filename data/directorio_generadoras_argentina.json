@@ -1,0 +1,351 @@
+{
+  "metadatos": {
+    "titulo": "Directorio Nacional de Empresas Generadoras Termicas y Centrales en Argentina",
+    "mercado": "Mercado Electrico Mayorista (MEM) - CAMMESA",
+    "periodo": "2025-2026",
+    "criterio_clasificacion": "Estatus Plan Gas.Ar, Capacidad Termica (MW), Tecnologia y Prioridad de Brokerage"
+  },
+  "grupos_generadores": [
+    {
+      "grupo": "Central Puerto S.A.",
+      "holding": "Central Puerto",
+      "participacion_plan_gas": "Mixta (Contratos Plan Gas.Ar en centrales clave, pero alta exposicion a compras spot y respaldo liquido)",
+      "capacidad_total_termica_MW": 4350,
+      "prioridad_comercial_brokerage": "Estrategica / Volumen Masivo",
+      "centrales": [
+        {
+          "nombre": "Central Termica Costanera",
+          "ubicacion": "Puerto de Buenos Aires (CABA)",
+          "capacidad_MW": 2324,
+          "tecnologia": "Ciclos Combinados (CC Mitsubishi / Siemens) + Turbinas de Vapor convencionales",
+          "combustibles": ["Gas Natural", "Fuel Oil N6", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGS/TGN nodo GBA + Muelle propio de descarga directa de buques para Fuel Oil y Gasoil",
+          "consumo_gas_pico_dam3_dia": 7500,
+          "situacion_combustible": "Requiere grandes volumenes de Fuel Oil en invierno; gran compradora de gas spot"
+        },
+        {
+          "nombre": "Central Termica Nuevo Puerto / Puerto Nuevo",
+          "ubicacion": "Puerto de Buenos Aires (CABA)",
+          "capacidad_MW": 1010,
+          "tecnologia": "Ciclos Combinados y Turbinas de Vapor",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Conexion de red TGS/TGN + Muelle portuario",
+          "consumo_gas_pico_dam3_dia": 3200,
+          "situacion_combustible": "Ubicacion privilegiada en puerto; optimizacion de gas de oportunidad"
+        },
+        {
+          "nombre": "Central Termica Genelba (Complejo Marcos Paz)",
+          "ubicacion": "Marcos Paz (Buenos Aires)",
+          "capacidad_MW": 1253,
+          "tecnologia": "Ciclo Combinado multieje de alta eficiencia Siemens",
+          "combustibles": ["Gas Natural"],
+          "logistica_combustible": "Gasoducto troncal TGS / Enlace GPNK",
+          "consumo_gas_pico_dam3_dia": 4800,
+          "situacion_combustible": "Una de las centrales mas eficientes del SADI; despacho de base prioritario"
+        },
+        {
+          "nombre": "Central Termica Brigadier Lopez",
+          "ubicacion": "Sauce Viejo (Santa Fe)",
+          "capacidad_MW": 420,
+          "tecnologia": "Ciclo Combinado (TG Alstom + TV)",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGN + Flete camion para Gasoil",
+          "consumo_gas_pico_dam3_dia": 1400,
+          "situacion_combustible": "Punto intermedio TGN; sensible a peajes de transporte y flete de gasoil"
+        },
+        {
+          "nombre": "Central Termica San Lorenzo",
+          "ubicacion": "San Lorenzo (Santa Fe)",
+          "capacidad_MW": 330,
+          "tecnologia": "Cogeneracion de alta eficiencia acoplada a complejo sojero",
+          "combustibles": ["Gas Natural"],
+          "logistica_combustible": "Gasoducto TGN",
+          "consumo_gas_pico_dam3_dia": 1100,
+          "situacion_combustible": "Demanda termica e industrial combinada"
+        }
+      ]
+    },
+    {
+      "grupo": "MSU Energy S.A.",
+      "holding": "MSU Energy",
+      "participacion_plan_gas": "SIN Plan Gas Propio (Generador Puro 100% expuesto a compra en mercado)",
+      "capacidad_total_termica_MW": 750,
+      "prioridad_comercial_brokerage": "MAXIMA / Cliente Target Primario",
+      "centrales": [
+        {
+          "nombre": "Central Termica General Rojo",
+          "ubicacion": "San Nicolas (Buenos Aires)",
+          "capacidad_MW": 250,
+          "tecnologia": "Ciclo Combinado (TG GE + TV)",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGN + Proximidad a Puerto San Nicolas para flete corto de Gasoil",
+          "consumo_gas_pico_dam3_dia": 850,
+          "situacion_combustible": "No produce gas; requiere contratos competitivos para proteger su margen en el despacho"
+        },
+        {
+          "nombre": "Central Termica Barker",
+          "ubicacion": "Benito Juarez (Buenos Aires)",
+          "capacidad_MW": 250,
+          "tecnologia": "Ciclo Combinado",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGS + Flete carretero de 420 km para Gasoil",
+          "consumo_gas_pico_dam3_dia": 850,
+          "situacion_combustible": "Alto costo de flete carretero de gasoil; objetivo clave para optimizacion de suministro"
+        },
+        {
+          "nombre": "Central Termica Villa Maria",
+          "ubicacion": "Villa Maria (Cordoba)",
+          "capacidad_MW": 250,
+          "tecnologia": "Ciclo Combinado",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGN Centro-Oeste + Flete carretero",
+          "consumo_gas_pico_dam3_dia": 850,
+          "situacion_combustible": "Zona mediterranea con restricciones estacionales de gas"
+        }
+      ]
+    },
+    {
+      "grupo": "Grupo Albanesi",
+      "holding": "Generacion Mediterranea / Central Termica Roca",
+      "participacion_plan_gas": "SIN Plan Gas Integrado (Comprador de mercado libre y subastas MEGSA)",
+      "capacidad_total_termica_MW": 1650,
+      "prioridad_comercial_brokerage": "MAXIMA / Cliente Target Primario",
+      "centrales": [
+        {
+          "nombre": "Central Termica Modesto Maranzana",
+          "ubicacion": "Rio Cuarto (Cordoba)",
+          "capacidad_MW": 350,
+          "tecnologia": "Ciclo Combinado Siemens / Pratt & Whitney",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGN + Flete camion cisterna desde San Lorenzo/Mendoza",
+          "consumo_gas_pico_dam3_dia": 1200,
+          "situacion_combustible": "Expuesto a costo logistico de gasoil y estacionalidad de gas"
+        },
+        {
+          "nombre": "Central Termica Frias",
+          "ubicacion": "Frias (Santiago del Estero)",
+          "capacidad_MW": 120,
+          "tecnologia": "Turbinas de Gas Aeroderivadas Pratt & Whitney FT8",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGN Norte + Flete largo de camion",
+          "consumo_gas_pico_dam3_dia": 450,
+          "situacion_combustible": "Muy beneficiada por la Reversion del Gasoducto Norte; necesita gas firme de Vaca Muerta"
+        },
+        {
+          "nombre": "Central Termica Independencia",
+          "ubicacion": "San Miguel de Tucuman (Tucuman)",
+          "capacidad_MW": 120,
+          "tecnologia": "Turbinas de Gas",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGN",
+          "consumo_gas_pico_dam3_dia": 420,
+          "situacion_combustible": "Punto extremo norte de la red"
+        },
+        {
+          "nombre": "Central Termica Ezeiza",
+          "ubicacion": "Ezeiza (Buenos Aires)",
+          "capacidad_MW": 150,
+          "tecnologia": "Turbinas de Gas",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGS nodo GBA",
+          "consumo_gas_pico_dam3_dia": 550,
+          "situacion_combustible": "Generacion de punta para el anillo AMBA"
+        },
+        {
+          "nombre": "Central Termica Solalban",
+          "ubicacion": "Bahia Blanca (Buenos Aires)",
+          "capacidad_MW": 120,
+          "tecnologia": "Turbinas de Gas",
+          "combustibles": ["Gas Natural"],
+          "logistica_combustible": "Gasoducto TGS / Polo Petroquimico",
+          "consumo_gas_pico_dam3_dia": 400,
+          "situacion_combustible": "Cercania directa a cabecera TGS"
+        }
+      ]
+    },
+    {
+      "grupo": "Pampa Energia S.A.",
+      "holding": "Pampa Energia",
+      "participacion_plan_gas": "CON Plan Gas Integrado Propio (Productor Upstream de Vaca Muerta y comercializador)",
+      "capacidad_total_termica_MW": 2400,
+      "prioridad_comercial_brokerage": "Medio / Proveedor Estrategico y Comprador de Liquidos",
+      "centrales": [
+        {
+          "nombre": "Central Termica Loma de la Lata",
+          "ubicacion": "Loma de la Lata (Neuquen)",
+          "capacidad_MW": 600,
+          "tecnologia": "Ciclo Combinado",
+          "combustibles": ["Gas Natural"],
+          "logistica_combustible": "En boca de pozo (Cuenca Neuquina); costo de transporte = 0",
+          "consumo_gas_pico_dam3_dia": 2100,
+          "situacion_combustible": "Abastecida con gas propio a minimo costo"
+        },
+        {
+          "nombre": "Central Termica Parque Pilar",
+          "ubicacion": "Pilar (Buenos Aires)",
+          "capacidad_MW": 100,
+          "tecnologia": "Turbinas de Gas",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGS/TGN + Flete camion",
+          "consumo_gas_pico_dam3_dia": 350,
+          "situacion_combustible": "Punta AMBA"
+        },
+        {
+          "nombre": "Central Termica Ingeniero White / Piedra Buena",
+          "ubicacion": "Bahia Blanca (Buenos Aires)",
+          "capacidad_MW": 620,
+          "tecnologia": "Turbinas de Vapor",
+          "combustibles": ["Gas Natural", "Fuel Oil N6"],
+          "logistica_combustible": "Muelle de Puerto Galvan para Fuel Oil + TGS",
+          "consumo_gas_pico_dam3_dia": 1800,
+          "situacion_combustible": "Compradora intensiva de Fuel Oil de importacion"
+        }
+      ]
+    },
+    {
+      "grupo": "YPF Luz (YPF Energia Electrica)",
+      "holding": "YPF",
+      "participacion_plan_gas": "CON Plan Gas Integrado (Abastecimiento de YPF Upstream)",
+      "capacidad_total_termica_MW": 2500,
+      "prioridad_comercial_brokerage": "Baja en Gas Propio / Oportunidad en Swaps y Liquidos",
+      "centrales": [
+        {
+          "nombre": "Complejo Termico El Bracho",
+          "ubicacion": "El Bracho (Tucuman)",
+          "capacidad_MW": 1300,
+          "tecnologia": "Tres Ciclos Combinados de alta eficiencia",
+          "combustibles": ["Gas Natural"],
+          "logistica_combustible": "Gasoducto TGN Norte",
+          "consumo_gas_pico_dam3_dia": 4500,
+          "situacion_combustible": "Mayor polo de generacion del norte argentino"
+        },
+        {
+          "nombre": "Central Termica Loma Campana I y II",
+          "ubicacion": "Anelo (Neuquen)",
+          "capacidad_MW": 210,
+          "tecnologia": "Turbinas de Gas GE",
+          "combustibles": ["Gas Natural"],
+          "logistica_combustible": "Boca de pozo Vaca Muerta",
+          "consumo_gas_pico_dam3_dia": 800,
+          "situacion_combustible": "Autoconsumo en yacimiento"
+        },
+        {
+          "nombre": "Central Termica La Plata Cogeneracion I y II",
+          "ubicacion": "Ensenada / La Plata (Buenos Aires)",
+          "capacidad_MW": 270,
+          "tecnologia": "Cogeneracion industrial acoplada a Refineria La Plata",
+          "combustibles": ["Gas Natural", "Gas de Refineria"],
+          "logistica_combustible": "Gasoducto TGS + Corriente interna de refineria",
+          "consumo_gas_pico_dam3_dia": 950,
+          "situacion_combustible": "Suministro directo de refineria"
+        }
+      ]
+    },
+    {
+      "grupo": "AES Argentina Generacion S.A.",
+      "holding": "AES Corporation",
+      "participacion_plan_gas": "SIN Plan Gas Upstream (Compra de gas en mercado spot y subastas)",
+      "capacidad_total_termica_MW": 1050,
+      "prioridad_comercial_brokerage": "ALTA / Cliente Target",
+      "centrales": [
+        {
+          "nombre": "Central Termica San Nicolas",
+          "ubicacion": "San Nicolas de los Arroyos (Buenos Aires)",
+          "capacidad_MW": 650,
+          "tecnologia": "Turbinas de Vapor convencionales multiconbustible",
+          "combustibles": ["Gas Natural", "Fuel Oil N6", "Carbon Mineral"],
+          "logistica_combustible": "Muelle propio sobre Rio Parana de calado 32 pies + TGN",
+          "consumo_gas_pico_dam3_dia": 1800,
+          "situacion_combustible": "Capacidad de recibir buques y barcazas directamente; gran compradora de Fuel Oil"
+        },
+        {
+          "nombre": "Central Termica Sarmiento",
+          "ubicacion": "San Juan",
+          "capacidad_MW": 33,
+          "tecnologia": "Turbinas de Gas",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto Cuyano (TGN)",
+          "consumo_gas_pico_dam3_dia": 120,
+          "situacion_combustible": "Generacion regional de respaldo"
+        }
+      ]
+    },
+    {
+      "grupo": "Enel / Central Dock Sud S.A.",
+      "holding": "Central Dock Sud (YPF Luz / PAE)",
+      "participacion_plan_gas": "Contratos Plan Gas.Ar a traves de sus accionistas petroleros",
+      "capacidad_total_termica_MW": 900,
+      "prioridad_comercial_brokerage": "Media / Enfoque en Back-up Liquido",
+      "centrales": [
+        {
+          "nombre": "Central Dock Sud",
+          "ubicacion": "Avellaneda / Dock Sud (Buenos Aires)",
+          "capacidad_MW": 900,
+          "tecnologia": "Ciclo Combinado Alstom (TG1 + TG2 + TV) + Turbogas",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGS + Terminal portuaria Dock Sud",
+          "consumo_gas_pico_dam3_dia": 2900,
+          "situacion_combustible": "Generador clave en el AMBA; compra de gasoil de respaldo para picos"
+        }
+      ]
+    },
+    {
+      "grupo": "Genneia S.A. (Division Termica)",
+      "holding": "Genneia",
+      "participacion_plan_gas": "SIN Plan Gas Propio (Centrales de punta en mercado spot)",
+      "capacidad_total_termica_MW": 280,
+      "prioridad_comercial_brokerage": "ALTA / Nicho de Alta Rentabilidad",
+      "centrales": [
+        {
+          "nombre": "Central Termica Bragado I y II",
+          "ubicacion": "Bragado (Buenos Aires)",
+          "capacidad_MW": 118,
+          "tecnologia": "Turbinas de Gas aero y heavy duty",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGN / TGS enlace + Flete camion",
+          "consumo_gas_pico_dam3_dia": 400,
+          "situacion_combustible": "Despacho en horas de maxima exigencia; consumo intermitente pero con alto margen"
+        },
+        {
+          "nombre": "Central Termica Matheu",
+          "ubicacion": "Escobar / Pilar (Buenos Aires)",
+          "capacidad_MW": 42,
+          "tecnologia": "Motores y Turbinas de Gas",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Nodo Escobar (proximidad terminal GNL) + Flete camion",
+          "consumo_gas_pico_dam3_dia": 150,
+          "situacion_combustible": "Urgencia y despacho estacional"
+        }
+      ]
+    },
+    {
+      "grupo": "Empresa Provincial de Energia de Cordoba (EPEC)",
+      "holding": "EPEC (Estatica Provincial)",
+      "participacion_plan_gas": "SIN Plan Gas Propio (Comprador publico institucional)",
+      "capacidad_total_termica_MW": 580,
+      "prioridad_comercial_brokerage": "ALTA / Ecosistema Provincial EPEC",
+      "centrales": [
+        {
+          "nombre": "Central Termica Pilar Bicentenario",
+          "ubicacion": "Pilar (Cordoba)",
+          "capacidad_MW": 466,
+          "tecnologia": "Ciclo Combinado (2 Turbinas de Gas GE + 1 Turbina de Vapor)",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGN Centro-Oeste + Flete camion para Gasoil",
+          "consumo_gas_pico_dam3_dia": 1550,
+          "situacion_combustible": "Mayor central de generacion de Cordoba; busca reducir costo operativo para aliviar balance financiero"
+        },
+        {
+          "nombre": "Central Termica Arturo Zanichelli / Dea Funes",
+          "ubicacion": "Dean Funes / Cordoba",
+          "capacidad_MW": 60,
+          "tecnologia": "Turbinas de Gas",
+          "combustibles": ["Gas Natural", "Gasoil"],
+          "logistica_combustible": "Gasoducto TGN Norte",
+          "consumo_gas_pico_dam3_dia": 220,
+          "situacion_combustible": "Soporte de tension en el norte cordobes"
+        }
+      ]
+    }
+  ]
+}

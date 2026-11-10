@@ -1,0 +1,128 @@
+{
+  "metadatos": {
+    "titulo": "Benchmark de Precios de Combustibles y Gas Natural para el MEM (Argentina)",
+    "periodo": "2025-2026",
+    "moneda": "USD",
+    "fuentes": [
+      "Secretaria de Energia de la Nacion (Res. SE 400/2025, Plan Gas.Ar)",
+      "CAMMESA - Informes Mensuales de Combustibles y Costos de Generacion",
+      "MEGSA - Subastas Electronicas de Gas Natural",
+      "ENARGAS - Cuadros Tarifarios de Transporte",
+      "S&P Global Commodity Insights / Platts / Argus Media"
+    ]
+  },
+  "factores_conversion": {
+    "gas_natural_kcal_por_m3": 9300,
+    "gas_natural_m3_por_MMBtu": 27.1,
+    "gasoil_kcal_por_kg": 10200,
+    "gasoil_densidad_kg_m3": 845,
+    "gasoil_MMBtu_por_m3": 35.8,
+    "fuel_oil_kcal_por_kg": 9800,
+    "fuel_oil_densidad_kg_m3": 960,
+    "fuel_oil_MMBtu_por_ton": 38.9,
+    "gnl_m3_gas_por_ton_gnl": 1380
+  },
+  "rendimiento_termico_heat_rate": {
+    "ciclo_combinado_eficiente": {
+      "rendimiento_porcentual": 58.5,
+      "heat_rate_kcal_kwh": 1470,
+      "heat_rate_MMBtu_MWh": 5.83
+    },
+    "turbina_gas_abierta_aeroderivada": {
+      "rendimiento_porcentual": 38.0,
+      "heat_rate_kcal_kwh": 2263,
+      "heat_rate_MMBtu_MWh": 8.98
+    },
+    "turbina_gas_abierta_heavy_duty": {
+      "rendimiento_porcentual": 33.5,
+      "heat_rate_kcal_kwh": 2567,
+      "heat_rate_MMBtu_MWh": 10.19
+    },
+    "turbina_vapor_convencional": {
+      "rendimiento_porcentual": 31.0,
+      "heat_rate_kcal_kwh": 2774,
+      "heat_rate_MMBtu_MWh": 11.01
+    },
+    "motores_diesel_combustion_interna": {
+      "rendimiento_porcentual": 43.0,
+      "heat_rate_kcal_kwh": 2000,
+      "heat_rate_MMBtu_MWh": 7.94
+    }
+  },
+  "precios_gas_natural_pist": {
+    "cuenca_neuquina": {
+      "cuenca": "Neuquina (Vaca Muerta / Loma Campana / Fortin de Piedra)",
+      "verano_oct_abr_usd_MMBtu": 2.25,
+      "invierno_may_sep_usd_MMBtu": 3.65,
+      "promedio_anual_ponderado_usd_MMBtu": 2.83,
+      "spot_megsa_rango_usd_MMBtu": [2.10, 3.20],
+      "volumen_disponible": "Excedente estructural de inyeccion en verano; saturacion troncal en invierno"
+    },
+    "cuenca_austral": {
+      "cuenca": "Austral (Tierra del Fuego y Santa Cruz Marina)",
+      "verano_oct_abr_usd_MMBtu": 2.10,
+      "invierno_may_sep_usd_MMBtu": 3.35,
+      "promedio_anual_ponderado_usd_MMBtu": 2.62,
+      "spot_megsa_rango_usd_MMBtu": [1.95, 2.90],
+      "volumen_disponible": "Produccion costa afuera con alto factor de carga anual y menor estacionalidad"
+    },
+    "cuenca_noroeste": {
+      "cuenca": "Noroeste (Salta / Jujuy - Acambuco / Ramos)",
+      "verano_oct_abr_usd_MMBtu": 3.80,
+      "invierno_may_sep_usd_MMBtu": 4.50,
+      "promedio_anual_ponderado_usd_MMBtu": 4.09,
+      "spot_megsa_rango_usd_MMBtu": [3.50, 4.80],
+      "volumen_disponible": "Cuenca en declino maduro; sustituida crecientemente por la Reversion del Gasoducto Norte"
+    }
+  },
+  "precios_gnl_importado": {
+    "terminal_escobar": {
+      "ubicacion": "Terminal Fluvial Regasificadora de Escobar (Rio Parana)",
+      "componentes_precio": {
+        "henry_hub_referencia_usd_MMBtu": 3.10,
+        "licuefaccion_fob_usd_MMBtu": 2.50,
+        "flete_maritimo_seguro_usd_MMBtu": 1.90,
+        "regasificacion_costo_terminal_usd_MMBtu": 1.25,
+        "impuestos_tasas_puerto_usd_MMBtu": 0.45
+      },
+      "precio_total_cif_regasificado_usd_MMBtu": 9.20,
+      "rango_estacional_invierno_usd_MMBtu": [8.50, 12.80]
+    }
+  },
+  "precios_combustibles_liquidos": {
+    "gasoil_grado_2_industrial": {
+      "unidad_volumen": "USD/m3",
+      "precio_refineria_local_usd_m3": 790.0,
+      "precio_cif_importacion_puerto_usd_m3": 710.0,
+      "equivalente_usd_MMBtu": 22.07,
+      "uso_en_mem": "Arranque de turbinas, respaldo obligatorio en invierno, centrales aisladas"
+    },
+    "gasoil_grado_3_ultra_bajo_azufre": {
+      "unidad_volumen": "USD/m3",
+      "precio_refineria_local_usd_m3": 855.0,
+      "precio_cif_importacion_puerto_usd_m3": 765.0,
+      "equivalente_usd_MMBtu": 23.88,
+      "uso_en_mem": "Turbinas aeroderivadas de alta exigencia ambiental (GE LM6000 / LMS100)"
+    },
+    "fuel_oil_n6_bajo_azufre": {
+      "unidad_volumen": "USD/ton",
+      "precio_refineria_local_usd_ton": 520.0,
+      "precio_cif_importacion_puerto_usd_ton": 475.0,
+      "equivalente_usd_MMBtu": 13.37,
+      "uso_en_mem": "Calderas de turbinas de vapor convencionales (Central Costanera, San Nicolas, Piedra Buena)"
+    }
+  },
+  "margen_de_ahorro_brokerage_energycpy": {
+    "gas_natural": {
+      "mecanismo": "Agregacion de demanda de generadores independientes + negociacion take-or-pay estacional con operadoras upstream de Cuenca Neuquina",
+      "ahorro_estimado_usd_MMBtu": [0.15, 0.45],
+      "ahorro_porcentual_estimado": [5.5, 14.0]
+    },
+    "combustibles_liquidos": {
+      "mecanismo": "Licitaciones privadas consolidadas con traders internacionales y refinerias locales con entrega en puerto / tanque de terminal",
+      "ahorro_estimado_usd_m3_gasoil": [30.0, 65.0],
+      "ahorro_estimado_usd_ton_fuel_oil": [25.0, 50.0],
+      "ahorro_porcentual_estimado": [4.0, 9.5]
+    }
+  }
+}

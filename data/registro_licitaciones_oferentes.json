@@ -1,0 +1,109 @@
+{
+  "metadatos": {
+    "titulo": "Registro de Licitaciones, Subastas y Mapeo de Oferentes de Combustibles y Gas",
+    "ambito": "Mercado Argentino y Conexiones Internacionales (FOB / CIF / PIST)",
+    "periodo": "2025-2026"
+  },
+  "licitaciones_y_mecanismos_de_compra": [
+    {
+      "organismo": "CAMMESA / ENARSA (Historico y Transicion Decreto 450/2025)",
+      "tipo_concurso": "Licitaciones Publicas Internacionales y Nacionales para Combustibles Liquidos",
+      "productos": ["Gasoil Grado 2 Industrial", "Fuel Oil N6 Bajo Azufre", "Cargamentos de GNL (Escobar)"],
+      "frecuencia": "Trimestral / Semestral (convocatorias de invierno y verano)",
+      "caracteristicas": "Grandes volumenes en lotes de 50.000 m3 a 200.000 m3 puestos en puerto. Precios adjudicados fijan el costo de paridad de importacion de referencia para el MEM",
+      "evolucion_2025_2026": "Traspaso paulatino a las generadoras termicas privadas, reduciendo la compra centralizada de CAMMESA"
+    },
+    {
+      "organismo": "MEGSA (Mercado Electronico del Gas S.A.)",
+      "tipo_concurso": "Subastas Electronicas de Gas Natural en PIST",
+      "productos": ["Gas Natural Firme", "Gas Natural Interrumpible", "Gas Spot de Oportunidad"],
+      "frecuencia": "Diaria (Mercado Spot) y Estacional / Mensual (Pliego Base)",
+      "caracteristicas": "Precios transparentes fijados por casamiento de curvas de oferta y demanda por cuenca. Precios promedio historicos entre USD 2.15 y USD 3.20/MMBtu",
+      "evolucion_2025_2026": "Canal preferencial para la contratacion directa de generadores que no tienen Plan Gas propio"
+    },
+    {
+      "organismo": "Licitaciones Privadas de Generadoras (Res. SE 400/2025)",
+      "tipo_concurso": "Compulsas Privadas de Precios y Solicitud de Propuestas (RFP)",
+      "productos": ["Contratos Bilaterales PPA de Gas PIST", "Suministro Puesto en Central de Gasoil", "Fuel Oil N6 en Muelle"],
+      "frecuencia": "Anual / Semestral por cada grupo generador (MSU, Albanesi, Central Puerto, etc.)",
+      "caracteristicas": "Licitaciones directas a comercializadores y productores buscando descuentos de escala y contratos flexibles con clausulas take-or-pay moderadas (70-80%)",
+      "evolucion_2025_2026": "EJE PRINCIPAL DE INTERMEDIACION PARA ENERGY CPY"
+    }
+  ],
+  "mapeo_oferentes_gas_natural": [
+    {
+      "empresa": "YPF S.A.",
+      "rol": "Mayor productor de gas y petroleo de Argentina (Lider en Vaca Muerta)",
+      "cuencas": ["Neuquina", "Austral", "Golfo San Jorge", "Cuyana"],
+      "capacidad_inyeccion_MMm3_dia": 42.0,
+      "perfil_oferta": "Contratos masivos en PIST, alta flexibilidad y capacidad de respaldo"
+    },
+    {
+      "empresa": "Pan American Energy (PAE)",
+      "rol": "Segundo productor integrado (Aguada Pichana Oeste, Lindero Atravesado)",
+      "cuencas": ["Neuquina", "Golfo San Jorge", "Austral"],
+      "capacidad_inyeccion_MMm3_dia": 18.5,
+      "perfil_oferta": "Enfoque en clientes industriales y generacion electrica propia/asociada"
+    },
+    {
+      "empresa": "Tecpetrol S.A. (Grupo Techint)",
+      "rol": "Operador del megayacimiento Fortin de Piedra (Vaca Muerta)",
+      "cuencas": ["Neuquina"],
+      "capacidad_inyeccion_MMm3_dia": 24.0,
+      "perfil_oferta": "Gran volumen excedente en temporada estival; agresivo en precios spot de verano"
+    },
+    {
+      "empresa": "TotalEnergies Austral",
+      "rol": "Lider en produccion offshore en Cuenca Austral (Proyecto Fenix) y Neuquina (Aguada Pichana)",
+      "cuencas": ["Austral", "Neuquina"],
+      "capacidad_inyeccion_MMm3_dia": 28.0,
+      "perfil_oferta": "Gas de alto factor de carga; produccion de Fenix entrando al sistema"
+    },
+    {
+      "empresa": "Pampa Energia S.A. (Upstream)",
+      "rol": "Productor integrado (El Mangrullo, Sierra Chata)",
+      "cuencas": ["Neuquina"],
+      "capacidad_inyeccion_MMm3_dia": 14.0,
+      "perfil_oferta": "Abastece sus propias usinas y vende excedentes en MEGSA e industrias"
+    },
+    {
+      "empresa": "Pluspetrol / Wintershall Dea (Harbour Energy) / CGC / Vista",
+      "rol": "Productores independientes de cuenca",
+      "cuencas": ["Neuquina", "Austral", "Noroeste"],
+      "capacidad_inyeccion_MMm3_dia": 15.0,
+      "perfil_oferta": "Abiertos a acuerdos bilaterales con generadoras para colocar volumen sin intermediarios"
+    }
+  ],
+  "mapeo_oferentes_combustibles_liquidos": [
+    {
+      "empresa": "YPF S.A. (Refinacion & Downstream)",
+      "infraestructura": "Refinerias La Plata y Lujan de Cuyo (Capacidad > 320.000 barriles/dia)",
+      "productos": ["Gasoil Grado 2", "Gasoil Grado 3", "Fuel Oil N6"],
+      "logistica": "Poliductos, cargaderos de camiones, muelles propios en Ensenada y Dock Sud"
+    },
+    {
+      "empresa": "Raizen Argentina (Licenciataria de Shell)",
+      "infraestructura": "Refineria Buenos Aires (Dock Sud)",
+      "productos": ["Gasoil Grado 2", "Gasoil Grado 3", "Fuel Oil"],
+      "logistica": "Muelle de aguas profundas en Dock Sud y entrega a camiones"
+    },
+    {
+      "empresa": "Pan American Energy (Axion Energy)",
+      "infraestructura": "Refineria Campana (completamente modernizada)",
+      "productos": ["Gasoil Diesel x10", "Gasoil Grado 2"],
+      "logistica": "Terminal Campana sobre el Rio Parana; poliducto a San Lorenzo y despacho a camiones"
+    },
+    {
+      "empresa": "Trafigura Argentina (Puma Energy)",
+      "infraestructura": "Refineria Bahia Blanca y Terminal Campana",
+      "productos": ["Gasoil Grado 2/3", "Fuel Oil importado"],
+      "logistica": "Trader global lider en logistica y fletes maritimos; alta competitividad en producto importado CIF"
+    },
+    {
+      "empresa": "Traders Internacionales (Vitol, Glencore, Mercuria, Gunvor)",
+      "infraestructura": "Buques MR Tanker, almacenamiento en tanques de terceros en Dock Sud / Campana",
+      "productos": ["Gasoil Ultra Bajo Azufre", "Fuel Oil 1% S (LSFO)"],
+      "logistica": "Importacion FOB Golfo de Mexico / Europa / Brasil y entrega CIF en puerto fluvial/maritimo"
+    }
+  ]
+}

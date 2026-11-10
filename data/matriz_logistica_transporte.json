@@ -1,0 +1,125 @@
+{
+  "metadatos": {
+    "titulo": "Matriz Logistica de Transporte de Combustibles y Gas Natural en Argentina",
+    "alcance": "Logistica Interna (Gasoductos y Flete Carretero) y Logistica de Importacion Portuaria",
+    "periodo": "2025-2026",
+    "moneda": "USD"
+  },
+  "logistica_interna_gas_natural": {
+    "gasoductos_troncales": [
+      {
+        "sistema": "GPNK (Gasoducto Presidente Nestor Kirchner - Perito Moreno)",
+        "tramo": "Tratayen (Neuquen) - Salliquelo (Buenos Aires)",
+        "longitud_km": 573,
+        "capacidad_actual_MMm3_dia": 21.0,
+        "operador": "Energia Argentina S.A. / TGS",
+        "tarifa_transporte_estimada_usd_MMBtu": 0.58,
+        "impacto": "Evacua la produccion no convencional de Vaca Muerta hacia el nodo de consumo Litoral y GBA"
+      },
+      {
+        "sistema": "TGS (Transportadora de Gas del Sur)",
+        "sistemas_principales": "Neuba I, Neuba II y San Martin",
+        "recorrido": "Cuenca Neuquina y Cuenca Austral hacia Bahia Blanca, Costa Atlantica y GBA",
+        "longitud_red_km": 9240,
+        "peaje_enargas_medio_usd_MMBtu": 0.72,
+        "tiempo_transito_horas": 36,
+        "nodos_clave_generacion": ["Bahia Blanca", "Mar del Plata", "GBA Sur (Dock Sud, Costanera, Genelba)"]
+      },
+      {
+        "sistema": "TGN (Transportadora de Gas del Norte)",
+        "sistemas_principales": "Gasoducto Centro-Oeste y Gasoducto Norte (con Reversion)",
+        "recorrido": "Cuenca Neuquina hacia Cuyo, Cordoba, Rosario y Norte (Tucuman/Salta)",
+        "longitud_red_km": 6800,
+        "peaje_enargas_medio_usd_MMBtu": 0.94,
+        "tiempo_transito_horas": 48,
+        "nodos_clave_generacion": ["San Nicolas", "Rosario", "Cordoba (Pilar, Maranzana)", "Tucuman (El Bracho)"]
+      }
+    ]
+  },
+  "logistica_interna_flete_carretero": {
+    "tipo_vehiculo": "Camion Cisterna Semirremolque de 30 a 36 m3 (Gasoil) o 28 a 32 ton (Fuel Oil calefaccionado)",
+    "costo_flete_base_usd_m3_km": 0.095,
+    "distancias_y_costos_testigo": [
+      {
+        "origen": "Terminal Portuaria Dock Sud / Campana",
+        "destino": "Central Termica Genelba (Marcos Paz, BA)",
+        "distancia_km": 75,
+        "costo_flete_usd_m3": 7.13,
+        "costo_flete_usd_ton_fueloil": 8.50
+      },
+      {
+        "origen": "Terminal Campana / San Nicolas",
+        "destino": "Central Termica General Rojo (MSU Energy, San Nicolas)",
+        "distancia_km": 40,
+        "costo_flete_usd_m3": 3.80,
+        "costo_flete_usd_ton_fueloil": 4.50
+      },
+      {
+        "origen": "Terminal Campana / Dock Sud",
+        "destino": "Central Termica Barker (MSU Energy, Benito Juarez, BA)",
+        "distancia_km": 420,
+        "costo_flete_usd_m3": 39.90,
+        "costo_flete_usd_ton_fueloil": 46.20
+      },
+      {
+        "origen": "Refineria Lujan de Cuyo (YPF) / Terminal San Lorenzo",
+        "destino": "Central Termica Modesto Maranzana (Albanesi, Rio Cuarto, Cba)",
+        "distancia_km": 380,
+        "costo_flete_usd_m3": 36.10,
+        "costo_flete_usd_ton_fueloil": 42.00
+      },
+      {
+        "origen": "Terminal San Lorenzo / Campana",
+        "destino": "Central Termica Frias (Albanesi, Santiago del Estero)",
+        "distancia_km": 710,
+        "costo_flete_usd_m3": 67.45,
+        "costo_flete_usd_ton_fueloil": 78.50
+      }
+    ]
+  },
+  "logistica_importacion_maritima_y_portuaria": {
+    "puertos_y_terminales_combustibles": [
+      {
+        "puerto": "Puerto Dock Sud (Buenos Aires)",
+        "terminales": ["Exolgan", "Shell / Raizen", "Dapsa", "Central Dock Sud / Costanera"],
+        "calado_max_pies": 33,
+        "tipo_buques": "MR Tanker (Medium Range 40.000 - 50.000 DWT)",
+        "capacidad_almacenamiento_m3": 450000,
+        "ventajas": "Acceso inmediato al mayor cluster de generacion termica de Argentina (Costanera, Dock Sud, Genelba)"
+      },
+      {
+        "puerto": "Puerto Campana / Zarate (Rio Parana de las Palmas)",
+        "terminales": ["Axion Energy", "Vitol Terminal Campana", "Delta Dock", "Pampa Energia"],
+        "calado_max_pies": 34,
+        "tipo_buques": "Handymax / MR Tanker",
+        "capacidad_almacenamiento_m3": 380000,
+        "ventajas": "Conexion directa por autopista y ramales ferroviarios hacia el centro y norte del pais"
+      },
+      {
+        "puerto": "Puerto San Nicolas (Rio Parana)",
+        "terminales": ["Muelle AES Central Termica San Nicolas", "Ternium"],
+        "calado_max_pies": 32,
+        "tipo_buques": "Handymax / Barcazas de empuje",
+        "capacidad_almacenamiento_m3": 120000,
+        "ventajas": "Descarga directa a los tanques de la central termica San Nicolas (AES) y cercania a CT General Rojo"
+      },
+      {
+        "puerto": "Puerto Bahia Blanca (Ingeniero White / Galvan)",
+        "terminales": ["Puerto Galvan", "Terminal Mega", "Central Termica Piedra Buena"],
+        "calado_max_pies": 45,
+        "tipo_buques": "Panamax / Aframax / MR Tanker",
+        "capacidad_almacenamiento_m3": 280000,
+        "ventajas": "Puerto de aguas profundas; capacidad de recibir buques de gran porte sin restricciones de marea"
+      }
+    ],
+    "estructura_costos_importacion_liquidos": {
+      "flete_maritimo_us_gulf_a_buenos_aires_usd_ton": 42.50,
+      "seguro_maritimo_porcentual_cif": 0.45,
+      "demurrage_estadita_buque_usd_dia": 22000,
+      "practicaje_remolque_y_amarre_usd_escala": 18500,
+      "peaje_hidrovia_parana_usd_trb": 3.06,
+      "tarifa_almacenamiento_tanque_usd_m3_mes": 6.20,
+      "tasa_despacho_a_camion_usd_m3": 2.80
+    }
+  }
+}
