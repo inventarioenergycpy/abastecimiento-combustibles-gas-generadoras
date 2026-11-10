@@ -52,9 +52,9 @@ graph TD
 ### 1.2. Magnitud Económica del Negocio
 - **Universo de Potencia Analizado**: **14.760 MW térmicos** distribuidos en 9 grupos generadores y más de 25 centrales térmicas.
 - **Consumo Anual Estimado**:
-  - Gas Natural: $\approx 350.000.000\text{ MMBtu / año}$ ($\approx 35\text{ MMm}^3/\text{día}$ promedio).
-  - Gasoil Grado 2/3: $\approx 850.000\text{ m}^3\text{ / año}$ (respaldo de picos e invierno).
-  - Fuel Oil N.º 6 Bajo Azufre: $\approx 700.000\text{ Ton / año}$ (grandes calderas portuarias).
+  - Gas Natural: ≈ 350.000.000 MMBtu / año (≈ 35 MMm³/día promedio).
+  - Gasoil Grado 2/3: ≈ 850.000 m³ / año (respaldo de picos e invierno).
+  - Fuel Oil N.º 6 Bajo Azufre: ≈ 700.000 Ton / año (grandes calderas portuarias).
 - **Pool de Ahorro Neto Anual Detectado**: **USD 171.905.433 / año**.
 - **Potencial de Honorarios para Energy CPY (Shared Savings 10%)**: **USD 17.190.543 / año**.
 
@@ -134,12 +134,12 @@ xychart-beta
     bar [20.70, 21.98, 56.55, 82.61, 134.50]
 ```
 
-*Valores calculados sobre Ciclo Combinado moderno ($\eta = 58,5\%$ y Heat Rate = $5,83\text{ MMBtu/MWh}$). En turbinas de gas aeroderivadas de ciclo abierto ($\eta = 38\%$), el CVP de gasoil salta a **USD 207,17 / MWh**.*
+*Valores calculados sobre Ciclo Combinado moderno (η = 58,5% y Heat Rate = 5,83 MMBtu/MWh). En turbinas de gas aeroderivadas de ciclo abierto (η = 38%), el CVP de gasoil salta a **USD 207,17 / MWh**.*
 
 ### 3.3. Tendencias Macro de la Transición 2025–2028
 1. **Consolidación de Vaca Muerta**: Con la finalización de la Reversión del Gasoducto Norte y las plantas compresoras de GPNK, la oferta de gas no convencional desplazará definitivamente al gas boliviano y al GNL fuera del invierno duro.
 2. **Desregulación del Mercado a Término (MAT)**: Las distribuidoras y grandes usuarios comenzarán a contratar energía libremente con generadoras, obligando a estas a asegurar gas económico para ofrecer contratos PPA atractivos.
-3. **Respaldo Térmico Líquido Imprescindible**: Pese al crecimiento de renovables (solar y eólica), el sistema argentino requiere **firmeza térmica**. En invierno, el consumo residencial prioritario corta el gas a las usinas, demandando más de **$1.500.000\text{ m}^3$ de líquidos** para evitar apagones masivos.
+3. **Respaldo Térmico Líquido Imprescindible**: Pese al crecimiento de renovables (solar y eólica), el sistema argentino requiere **firmeza térmica**. En invierno, el consumo residencial prioritario corta el gas a las usinas, demandando más de **1.500.000 m³ de líquidos** para evitar apagones masivos.
 
 ---
 
@@ -179,13 +179,13 @@ flowchart TD
 
 ### 4.2. Negociación con Traders y Refinerías (Líquidos: Gasoil y Fuel Oil)
 #### A. ¿Qué valor les ofrece Energy CPY?
-- **Volumen de Escala para Cargamentos Completos**: Un cargamento de buque tanque **MR Tanker (Medium Range)** transporta entre **$35.000\text{ y }45.000\text{ m}^3$**. Una sola central mediana no puede absorber este volumen por capacidad de tanques; Energy CPY distribuye el cargamento entre 3 o 4 centrales (ej. Central Puerto Costanera, MSU General Rojo y Albanesi Maranzana).
+- **Volumen de Escala para Cargamentos Completos**: Un cargamento de buque tanque **MR Tanker (Medium Range)** transporta entre **35.000 y 45.000 m³**. Una sola central mediana no puede absorber este volumen por capacidad de tanques; Energy CPY distribuye el cargamento entre 3 o 4 centrales (ej. Central Puerto Costanera, MSU General Rojo y Albanesi Maranzana).
 - **Previsibilidad de Demanda Estacional**: Compromiso de compra anticipado en marzo/abril antes de que los precios de fletes y gasoil se disparen en el invierno internacional.
 
 #### B. Términos Contractuales Clave a Negociar
 - **Modalidad de Entrega**: **CIF Puerto Fluvial/Marítimo** (Dock Sud, Campana, San Nicolás o Bahía Blanca) o **DAP Puesto en Tanque de Terminal**.
 - **Control de Calidad y Pérdidas**:
-  - Inspector independiente de prestigio internacional (*SGS*, *Bureau Veritas* o *Saybolt*) para certificar volumen y calidad (contenido de azufre $\le 10\text{ ppm}$ en Grado 3, $\le 500\text{ ppm}$ en Grado 2; viscosidad cinemática y punto de inflamación en Fuel Oil).
+  - Inspector independiente de prestigio internacional (*SGS*, *Bureau Veritas* o *Saybolt*) para certificar volumen y calidad (contenido de azufre ≤ 10 ppm en Grado 3, ≤ 500 ppm en Grado 2; viscosidad cinemática y punto de inflamación en Fuel Oil).
   - Deducción de mermas de transporte marítimo tolerables: máximo **0,3% a 0,5%**.
 - **Ventana de Estadía y Demurrages**: Mínimo **72 horas de estadía gratuita** (*laytime*) para descarga para evitar penalidades de demurrage (USD 18.000–22.000/día).
 
@@ -273,7 +273,7 @@ classDiagram
    - Prohíbe formalmente a las partes contactarse de manera directa eludiendo la intermediación de Energy CPY una vez presentada la oferta técnica o la lista de precios.
 2. **Capa 2: Contrato de Corretaje Comercial e Intermediación (Arts. 1345 a 1355 CCCN)**:
    - Otorga mandato expreso a Energy CPY para acercar a las partes y negociar las mejores condiciones de compra.
-   - Fija la comisión de éxito (**Shared Savings: 10% del ahorro neto verificado** o comisión fija de **USD 0,03 a USD 0,06 por MMBtu** y **USD 3,00 a USD 5,00 por $\text{m}^3$** de gasoil).
+   - Fija la comisión de éxito (**Shared Savings: 10% del ahorro neto verificado** o comisión fija de **USD 0,03 a USD 0,06 por MMBtu** y **USD 3,00 a USD 5,00 por m³** de gasoil).
    - Establece que Energy CPY **no adquiere la titularidad física ni jurídica del combustible**, quedando exenta de multas por desbalances ante ENARGAS o CAMMESA.
 3. **Capa 3: Contrato Bilateral Principal de Compraventa**:
    - Suscripto directamente entre el Productor Petrolero / Trader Internacional y la Generadora Térmica.
@@ -315,13 +315,14 @@ gantt
 ---
 
 ### 7.2. Métricas de Éxito y KPIs del Proyecto
-1. **Volumen de Demanda Consolidada**: Lograr un mínimo de **$1.500\text{ dam}^3/\text{día}$** de gas natural y **$50.000\text{ m}^3$** de gasoil bajo mandato de corretaje antes del 31 de marzo de 2026.
+1. **Volumen de Demanda Consolidada**: Lograr un mínimo de **1.500 dam³/día** de gas natural y **50.000 m³** de gasoil bajo mandato de corretaje antes del 31 de marzo de 2026.
 2. **Spread de Descuento Promedio Capturado**:
-   - Gas Natural: $\ge \text{USD } 0,25\text{ / MMBtu}$ por debajo del precio spot de invierno.
-   - Gasoil: $\ge \text{USD } 45,00\text{ / m}^3$ por debajo de precio mayorista de refinería local.
+   - Gas Natural: ≥ USD 0,25 / MMBtu por debajo del precio spot de invierno.
+   - Gasoil: ≥ USD 45,00 / m³ por debajo de precio mayorista de refinería local.
 3. **Conversión Comercial**: Cerrar al menos **dos contratos marco de suministro piloto** para la temporada invernal 2026.
 
 ---
 
 *Dossier oficial consolidado y resguardado en el repositorio central de Energy CPY.*  
 *Repositorio GitHub*: [https://github.com/inventarioenergycpy/abastecimiento-combustibles-gas-generadoras](https://github.com/inventarioenergycpy/abastecimiento-combustibles-gas-generadoras)
+
